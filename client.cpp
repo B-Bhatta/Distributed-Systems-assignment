@@ -66,7 +66,6 @@ int main() {
         std::cerr << "Communication error: " << e.what() << std::endl;
     }
 
-    // 9. Close Socket
     close(sock);
     return 0;
 }
