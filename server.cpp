@@ -5,7 +5,7 @@
 #include <unistd.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include "matrix_utils.h" // Include our custom library
+#include "matrix_utils.h" 
 
 #define PORT 8080
 
@@ -70,7 +70,7 @@ int main() {
         std::cout << "Client connected!" << std::endl;
 
         try {
-            // 6. Receive Matrix A
+     
             std::cout << "Receiving Matrix A..." << std::endl;
             Matrix A = recvMatrix(new_socket);
             std::cout << "Received A: " << A.rows << "x" << A.cols << std::endl;
